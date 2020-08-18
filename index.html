@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+	<title> Calculator </title>
+</head>
+<body>
+
+    <main>
+      <div class="calculator">
+          <header> 
+        <img src="https://emix.com.br/wp-content/themes/emix/img/logos/off/emix.png" alt="">
+      </header>
+        <div class="display">
+          <span> 71.370,32 x 2 = </span>
+          <h1> 142.740,64</h1>
+        </div>
+    
+        
+        <div class="keyboard">
+    <button type="button" class="operator" value="+">+</button>
+    <button type="button" class="operator" value=""><img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzMjAuOTQxIDMyMC45NDEiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMzIwLjk0MSAzMjAuOTQxIiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0yOTAuODUzIDQwLjExOGgtMTgxLjA0OWMtOS4wNiAwLTE3LjU1MSA0LjAxNi0yMy4zMDEgMTEuMDM4bC04NC4yNDEgMTAyLjk2OGMtMy4wMTcgMy42OTItMy4wMTcgOS4wMDEgMCAxMi42OTNsODQuMjUxIDEwMi45NzhjNS43MzkgNy4wMTMgMTQuMjMxIDExLjAyOCAyMy4yOTEgMTEuMDI4aDE4MS4wNDhjMTYuNTkyIDAgMzAuMDg4LTEzLjQ5NyAzMC4wODgtMzAuMDg4di0xODAuNTI5Yy4wMDEtMTYuNTkyLTEzLjQ5Ni0zMC4wODgtMzAuMDg3LTMwLjA4OHptMTAuMDI5IDIxMC42MTdjMCA1LjUzNC00LjQ5NiAxMC4wMjktMTAuMDI5IDEwLjAyOWgtMTgxLjA0OWMtMy4wMjYgMC01Ljg1Ny0xLjM0Mi03Ljc2Ny0zLjY3M2wtNzkuMDUtOTYuNjIxIDc5LjA0LTk2LjYxMWMxLjkyLTIuMzQxIDQuNzUtMy42ODMgNy43NzctMy42ODNoMTgxLjA0OGM1LjUzNCAwIDEwLjAyOSA0LjQ5NiAxMC4wMjkgMTAuMDI5LjAwMS4wMDEuMDAxIDE4MC41My4wMDEgMTgwLjUzeiIvPjxwYXRoIGQ9Im0yMjMuNTg1IDEwMy4yMzItNDMuMDU2IDQzLjA1Ni00My4wNTYtNDMuMDU2LTE0LjE4MiAxNC4xODIgNDMuMDU2IDQzLjA1Ni00My4wNTYgNDMuMDU2IDE0LjE4MiAxNC4xODIgNDMuMDU2LTQzLjA1NiA0My4wNTYgNDMuMDU2IDE0LjE4Mi0xNC4xODItNDMuMDU2LTQzLjA1NiA0My4wNTYtNDMuMDU2eiIvPjwvc3ZnPg==" width="25px" style="
+        filter: contrast(0.5);
+    "></button>
+    <button type="button" class="operator" value=""><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDggNDgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ4IDQ4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBkPSJNMzUuNDk0LDBjLTAuNDMsMC0wLjgxMSwwLjI3My0wLjk0NywwLjY4MUwxOS43MzQsNDQuNjRMOS4zNSwyNy40ODJDOS4xNjksMjcuMTgzLDguODQ0LDI3LDguNDk0LDI3aC04djJoNy40MzcNCgkJbDExLjIwOCwxOC41MThDMTkuMzIxLDQ3LjgxOSwxOS42NDYsNDgsMTkuOTk0LDQ4YzAuMDM2LDAsMC4wNzItMC4wMDIsMC4xMDktMC4wMDZjMC4zODctMC4wNDMsMC43MTQtMC4zMDYsMC44MzgtMC42NzVMMzYuMjEzLDINCgkJaDExLjI5M1YwSDM1LjQ5NHoiLz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" style="
+        width: 25px;
+        filter: contrast(0.5);
+    "></button>
+    <button type="button" class="operator" value="/">÷</button>
+    <button type="button" value="7">7</button>
+    <button type="button" value="8">8</button>
+    <button type="button" value="9">9</button>
+    <button type="button" class="operator" value="*">×</button>
+    <button type="button" value="4">4</button>
+    <button type="button" value="5">5</button>
+    <button type="button" value="6">6</button>
+    <button type="button" class="operator" value="-">-</button>
+    <button type="button" value="1">1</button>
+    <button type="button" value="2">2</button>
+    <button type="button" value="3">3</button>
+    <button type="button" class="operator" value="+">+</button>
+    <button type="button" value="+/-" class="operator">+/-</button>
+    <button type="button" value="0">0</button>
+    <button type="button" value="." class="operator">.</button>
+    <button type="button" class="equal-sign" value="=">=</button>
+    </div>
+    
+    
+    </main>
+</body>
+</html>
